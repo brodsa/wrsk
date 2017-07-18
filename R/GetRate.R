@@ -43,10 +43,7 @@ predict0[predict==out] <- TRUE
 
 tpr <- sum(label0 & predict0)/sum(label0)
 fpr <- sum(!label0 & predict0)/sum(!label0)
-if(is.na(label[1])){
-  tpr=NA
-  fpr=NA
-}
+
 return(c(TPR=tpr,FPR=fpr))
 }
 

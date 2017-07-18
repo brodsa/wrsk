@@ -56,7 +56,7 @@ plot(res$varweights)
 }
 \references{
 S. Brodinova, P. Filzmoser, T. Ortner, C. Breiteneder, M. Zaharieva. Robust and sparse k-means clustering for
-high-dimensional data, 2017.
+high-dimensional data, preparing for submission, 2017.
 
 D. M. Witten and R. Tibshirani. A framework for feature selection in clustering.
 Journal of the American Statistical Association, 105(490), 713-726, 2010.
@@ -65,7 +65,7 @@ Y. Kondo, M. Salibian-Barrera, R.H. Zamar. RSKC: An R Package for a
 Robust and Sparse K-Means Clustering Algorithm., Journal of Statistical Software, 72(5), 1-26, 2016.
 }
 \seealso{
-\code{\link[wrsk]{wrk}}, \code{\link[sparcl]{KmeansSparseCluster}}, \code{\link[RSKC]{RSKC}}
+\code{\link[wrsk]{wrk}}, \code{\link[sparcl]{KMeansSparseCluster}}, \code{\link[RSKC]{RSKC}}
 }
 \author{
 Sarka Brodinova <sarka.brodinova@tuwien.ac.at>

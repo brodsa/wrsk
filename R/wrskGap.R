@@ -94,7 +94,8 @@
 #' @author Sarka Brodinova <sarka.brodinova@tuwien.ac.at>
 #'
 #' @references S. Brodinova, P. Filzmoser, T. Ortner, C. Breiteneder, M. Zaharieva. Robust and sparse k-means clustering for
-#' high-dimensional data, 2017.
+#' high-dimensional data, preparing for submission, 2017.
+#' 
 #' @references D. M. Witten and R. Tibshirani. A framework for feature selection in clustering.
 #' Journal of the American Statistical Association, 105(490) 713-726, 2010.
 #'
@@ -135,9 +136,10 @@ wrskGap <- function(data,K,S,npermute=10,cores){
                        function(x,dat,k,s,weights_par){
                          set.seed(x)
                          dat.per <- apply(dat,2,function(z){sample(z,length(z))})
-                         r <- wrskc(dat.per,k,s)
+                         r <- wrsk(dat.per,k,s)
                        },dat=data,k=K,s=S[j],mc.cores=cores)
 
+    B_sa <- numeric(npermute)
     for(a in 1:npermute){
       B_sa[a] <- res.per[[a]]$WBCSS
     }

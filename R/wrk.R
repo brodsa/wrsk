@@ -41,7 +41,7 @@
 #' @author Sarka Brodinova <sarka.brodinova@tuwien.ac.at>
 #'
 #' @references S. Brodinova, P. Filzmoser, T. Ortner, C. Breiteneder, M. Zaharieva. Robust and sparse k-means clustering for
-#' high-dimensional data, 2017.
+#' high-dimensional data, preparing for submission, 2017.
 #'
 #' @seealso \code{\link[wrsk]{ROBIN}}
 #'

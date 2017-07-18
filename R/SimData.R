@@ -1,7 +1,7 @@
 #' SimData
 #'
 #' @description
-#' This function generates a synthetic dataset for the purpose of data clustering (Brodinova et al. (????))
+#' This function generates a synthetic dataset for the purpose of data clustering
 #' in case of both outliers and noise variables are present.
 #'
 #' @param size_grp A numeric vector containing the group sizes to be generated. The length of the vector
@@ -61,7 +61,7 @@
 #' @author Sarka Brodinova <sarka.brodinova@tuwien.ac.at>
 #'
 #' @references S. Brodinova, P. Filzmoser, T. Ortner, C. Breiteneder, M. Zaharieva. Robust and sparse k-means clustering for
-#' high-dimensional data, 2017.
+#' high-dimensional data, preparing for submission, 2017.
 #'
 #' @importFrom mixAK rRotationMatrix
 #' @importFrom MASS mvrnorm
@@ -87,12 +87,12 @@ SimData <- function(size_grp,p_inf,p_noise=NULL,p_out_inf=NULL,
     rho_grp_range <-list(min=0.1,max=0.9)
   }
 
-  GenSynData<- function(size_grp,p_inf,p_noise,p_out_inf=NULL,
+  GenSynData<- function(size_grp,p_inf,p_noise,p_out_inf,
                            n_grp,s_grp,mu_grp,
-                           n_out,s_out,scatter_out=TRUE,
-                        unif_out_range=unif_out_range,
-                        mu_grp_range=mu_grp_range,
-                        s_out_range=s_out_range,rho_grp_range=rho_grp_range){
+                           n_out,s_out,scatter_out,
+                        unif_out_range,
+                        mu_grp_range,
+                        s_out_range,rho_grp_range){
 
 
 
@@ -153,7 +153,6 @@ SimData <- function(size_grp,p_inf,p_noise=NULL,p_out_inf=NULL,
 
         # non-scatter outliers (outliers with differnt location than groups)
         }else{
-
           X[1:n_out[i],p_out] <-matrix(sample(c(runif(n_out[i]*length(p_out),
                                                       min=unif_out_range$min1,max=unif_out_range$max1),
                                                 runif(n_out[i]*length(p_out),
@@ -199,7 +198,9 @@ SimData <- function(size_grp,p_inf,p_noise=NULL,p_out_inf=NULL,
 
   ds <- GenSynData(size_grp,p_inf,p_noise,p_out_inf,
                     n_grp,s_grp,mu_grp=mu_grp,
-                    n_out,s_out,scatter_out)
+                    n_out,s_out,scatter_out,unif_out_range=unif_out_range,
+                   mu_grp_range=mu_grp_range,
+                   s_out_range=s_out_range,rho_grp_range=rho_grp_range)
 
   # outliers in non informative variables
   if(!is.null(p_out_noise)){

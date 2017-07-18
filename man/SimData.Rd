@@ -52,7 +52,7 @@ default is \code{list(min1=-12,max1=-6,min2=6,max2=12)}.}
 and noise variables (the number of groups+1).}
 }
 \description{
-This function generates a synthetic dataset for the purpose of data clustering (Brodinova et al. (????))
+This function generates a synthetic dataset for the purpose of data clustering
 in case of both outliers and noise variables are present.
 }
 \details{
@@ -80,7 +80,7 @@ table(d$lbout)
 }
 \references{
 S. Brodinova, P. Filzmoser, T. Ortner, C. Breiteneder, M. Zaharieva. Robust and sparse k-means clustering for
-high-dimensional data, 2017.
+high-dimensional data, preparing for submission, 2017.
 }
 \author{
 Sarka Brodinova <sarka.brodinova@tuwien.ac.at>
