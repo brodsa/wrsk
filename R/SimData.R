@@ -61,7 +61,7 @@
 #' @author Sarka Brodinova <sarka.brodinova@tuwien.ac.at>
 #'
 #' @references S. Brodinova, P. Filzmoser, T. Ortner, C. Breiteneder, M. Zaharieva. Robust and sparse k-means clustering for
-#' high-dimensional data, preparing for submission, 2017.
+#' high-dimensional data. Submitted for publication, 2017. Available at http://arxiv.org/abs/1709.10012
 #'
 #' @importFrom mixAK rRotationMatrix
 #' @importFrom MASS mvrnorm
@@ -120,7 +120,7 @@ SimData <- function(size_grp,p_inf,p_noise=NULL,p_out_inf=NULL,
     # the outliers has the same location as groups (only in case of scatter outliers)
     mu_out <- MU_grp
     n <- sum(size_grp)
-    p <- p_inf + p_noise
+    p <- ifelse(is.null(p_noise),p_inf,p_inf + p_noise)
     lb1 <- vector(length=0)
     y <- vector(length=0)
     x <- matrix(nrow=0, ncol=p)

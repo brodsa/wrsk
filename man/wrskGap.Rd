@@ -103,7 +103,7 @@ plot(obsweights,col=d$lb+1)
 }
 \references{
 S. Brodinova, P. Filzmoser, T. Ortner, C. Breiteneder, M. Zaharieva. Robust and sparse k-means clustering for
-high-dimensional data, preparing for submission, 2017.
+high-dimensional data. Submitted for publication, 2017. Available at http://arxiv.org/abs/1709.10012
 
 D. M. Witten and R. Tibshirani. A framework for feature selection in clustering.
 Journal of the American Statistical Association, 105(490) 713-726, 2010.

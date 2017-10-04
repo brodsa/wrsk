@@ -46,7 +46,7 @@ Hasan AM, et al. Robust partitional clustering by
 outlier and density insensitive seeding. Pattern Recognition Letters, 30(11), 994-1002, 2009.
 }
 \seealso{
-\code{\link[dbscan]{lof}}
+\code{\link[dbscan]{lof}}, \code{\link[wrsk]{wrk}}
 }
 \author{
 Sarka Brodinova <sarka.brodinova@tuwien.ac.at>

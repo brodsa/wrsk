@@ -2,6 +2,7 @@ Package: wrsk
 Type: Package
 Title: Robust (weighted) and sparse k-means clustering
 Version: 0.1.0
+Date: 2017-14-09
 Author: Sarka Brodinova
 Maintainer: Sarka Brodinova <sarka.brodinova@tuwien.ac.at>
 Description: Implements the robust (weighted) and sparse k-means clustering for high-dimensional data and generates
@@ -12,5 +13,6 @@ LazyData: true
 RoxygenNote: 6.0.1
 Depends: dbscan, dplyr, mixAK, MASS, parallel
 Implorts: dbscan::lof(), mixAK::rRotationMatrix(), MASS::mvrnorm(), parallel::detectCores()
-
+URL:http://github/brodsa/wrsk
+Packaged: 2017-07-16 06:45:20 UTC; root
 
