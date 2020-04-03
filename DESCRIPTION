@@ -4,7 +4,7 @@ Title: Robust (weighted) and sparse k-means clustering
 Version: 0.1.0
 Date: 2017-14-09
 Author: Sarka Brodinova
-Maintainer: Sarka Brodinova <sarka.brodinova@tuwien.ac.at>
+Maintainer: Sarka Brodinova <brodinova@gmail.com> 
 Description: Implements the robust (weighted) and sparse k-means clustering for high-dimensional data and generates
   synthetic data for the purpose of clustering with outliers and noise variables.
 License: GPL-3
